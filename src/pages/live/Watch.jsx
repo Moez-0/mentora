@@ -4,7 +4,7 @@ import { FiCalendar, FiClock, FiUser, FiVideo, FiMessageSquare } from 'react-ico
 
 const LiveSessionPage = () => {
   const { id } = useParams()
-  const [isLive, setIsLive] = useState(false)
+  const [isLive, setIsLive] = useState(true)
   const [chatMessages, setChatMessages] = useState([])
   const [newMessage, setNewMessage] = useState('')
   
