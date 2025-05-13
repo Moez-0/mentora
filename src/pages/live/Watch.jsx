@@ -4,7 +4,7 @@ import { FiCalendar, FiClock, FiUser, FiVideo, FiMessageSquare } from 'react-ico
 
 const LiveSessionPage = () => {
   const { id } = useParams()
-  const [isLive, setIsLive] = useState(false)
+  const [isLive, setIsLive] = useState(true)
   const [chatMessages, setChatMessages] = useState([])
   const [newMessage, setNewMessage] = useState('')
   
@@ -79,7 +79,7 @@ const LiveSessionPage = () => {
               {isLive ? (
                 <div className="bg-black aspect-w-16 aspect-h-9">
                   <iframe
-                    src="https://www.youtube.com/embed/live_stream?channel=UC_x5XG1OV2P6uZZ5FSM9Ttw"
+                    src="https://www.youtube.com/embed/jfKfPfyJRdk"
                     className="w-full h-full"
                     allowFullScreen
                   ></iframe>
