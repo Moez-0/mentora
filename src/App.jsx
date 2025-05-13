@@ -26,6 +26,23 @@ import CourseLearnPage from "./pages/course/Learn"
 import SubscriptionCheckoutPage from "./pages/plan/Subscribe"
 import LiveSessionRegisterPage from "./pages/live/Register"
 import LiveSessionPage from "./pages/live/Watch"
+import MentorDashboard from "./pages/mentor/MentorDashboard"
+import MentorCoursePage from "./pages/mentor/MentorCoursePage"
+import MentorCreateCoursePage from "./pages/mentor/MentorCreateCoursePage"
+import MentorSessionPage from "./pages/mentor/MentorSessionPage"
+import MentorStudentPage from "./pages/mentor/MentorStudentPage"
+import MentorEarningsPage from "./pages/mentor/MentorEarningsPage"
+import MentorAnalyticsPage from "./pages/mentor/MentorAnalyticsPage"
+import MentorCreateSessionPage from "./pages/mentor/MentorCreateSessionPage"
+import MentorEditSessionPage from "./pages/mentor/MentorEditSessionPage"
+import MentorEditCoursePage from "./pages/mentor/MentorEditCoursePage"
+import MentorMessagesPage from "./pages/mentor/MentorMessagesPage"
+import MentorStudentsPage from "./pages/mentor/MentorStudentsPage"
+import MentorCoursesPage from "./pages/mentor/MentorCoursesPage"
+import MentorSessionsPage from "./pages/mentor/MentorSessionsPage"
+import CourseContentPage from "./pages/mentor/course/CourseContentPage"
+import EditLessonPage from "./pages/mentor/course/EditLessonPage"
+import EditModulePage from "./pages/mentor/course/EditModulePage"
 
 
 function App() {
@@ -61,7 +78,33 @@ function App() {
 
 
           {/* TO DO ZYD MENTOR ( INTRUCTOR ROUTES ) */}
+         
+         
+          <Route path="mentor" element={<MentorDashboard />} />
+          <Route path="mentor/courses" element={<MentorCoursesPage />} />
+          <Route path="mentor/courses/:id" element={<MentorCoursePage />} />
+          <Route path="mentor/courses/new" element={<MentorCreateCoursePage />} />
+          <Route path="mentor/courses/:id/edit" element={<MentorEditCoursePage />} />
+          <Route path="mentor/courses/:id/content" element={<CourseContentPage />} />
+          <Route path="mentor/courses/:courseId/modules/new" element={<EditModulePage />} />
+          <Route path="/mentor/courses/:courseId/modules/:moduleId/edit" element={<EditModulePage />} />
+          <Route path="mentor/courses/:courseId/modules/:moduleId/lessons/new" element={<EditLessonPage />} />
+          <Route path="mentor/courses/:courseId/modules/:moduleId/lessons/:lessonId/edit" element={<EditLessonPage />} />
+          
+          <Route path="mentor/sessions" element={<MentorSessionsPage />} />
+          <Route path="mentor/sessions/:id" element={<MentorSessionPage />} />
+          <Route path="mentor/sessions/new" element={<MentorCreateSessionPage />} />
+          <Route path="mentor/sessions/:id/edit" element={<MentorEditSessionPage />} />
+          <Route path="mentor/sessions/:id" element={<LiveSessionPage />} />
+          <Route path="mentor/students" element={<MentorStudentsPage />} />
+          <Route path="mentor/students/:id" element={<MentorStudentPage />} />
+          <Route path="mentor/earnings" element={<MentorEarningsPage />} />
+          <Route path="mentor/analytics" element={<MentorAnalyticsPage />} />
+          <Route path="mentor/messages" element={<MentorMessagesPage />} />
+          
 
+
+          {/* TO DO ZYD ADMIN ROUTES */}
 
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />

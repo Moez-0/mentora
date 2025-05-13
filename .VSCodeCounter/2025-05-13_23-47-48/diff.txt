@@ -1,0 +1,71 @@
+Date : 2025-05-13 23:47:48
+Directory : d:\Mentora\mentora
+Total : 34 files,  3463 codes, 50 comments, 175 blanks, all 3688 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JavaScript JSX |         33 |      3,462 |         50 |        175 |      3,687 |
+| Markdown       |          1 |          1 |          0 |          0 |          1 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                            | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                               |         34 |      3,463 |         50 |        175 |      3,688 |
+| . (Files)                                                       |          1 |          1 |          0 |          0 |          1 |
+| src                                                             |         33 |      3,462 |         50 |        175 |      3,687 |
+| src (Files)                                                     |          1 |         29 |          2 |          1 |         32 |
+| src\components                                                  |          7 |         46 |         -7 |         -4 |         35 |
+| src\components (Files)                                          |          1 |         46 |         -7 |         -3 |         36 |
+| src\components\courses                                          |          1 |          0 |         -1 |          0 |         -1 |
+| src\components\home                                             |          5 |          0 |          1 |         -1 |          0 |
+| src\pages                                                       |         25 |      3,387 |         55 |        178 |      3,620 |
+| src\pages (Files)                                               |          4 |          0 |        -14 |         -7 |        -21 |
+| src\pages\live                                                  |          2 |          0 |         -1 |          1 |          0 |
+| src\pages\mentor                                                |         15 |      3,387 |         78 |        194 |      3,659 |
+| src\pages\student                                               |          4 |          0 |         -8 |        -10 |        -18 |
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                        | language       | code       | comment    | blank      | total      |
++-----------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| d:\Mentora\mentora\README.md                                    | Markdown       |          1 |          0 |          0 |          1 |
+| d:\Mentora\mentora\src\App.jsx                                  | JavaScript JSX |         29 |          2 |          1 |         32 |
+| d:\Mentora\mentora\src\components\Navbar.jsx                    | JavaScript JSX |         46 |         -7 |         -3 |         36 |
+| d:\Mentora\mentora\src\components\courses\CourseDetails.jsx     | JavaScript JSX |          0 |         -1 |          0 |         -1 |
+| d:\Mentora\mentora\src\components\home\Feature.jsx              | JavaScript JSX |          0 |         -1 |         -1 |         -2 |
+| d:\Mentora\mentora\src\components\home\PopularCourses.jsx       | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Mentora\mentora\src\components\home\TestimonialsSection.jsx  | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Mentora\mentora\src\components\home\Trusted.jsx              | JavaScript JSX |          0 |         -1 |          0 |         -1 |
+| d:\Mentora\mentora\src\components\home\UpComingLives.jsx        | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Mentora\mentora\src\pages\Courses.jsx                        | JavaScript JSX |          0 |         -4 |         -1 |         -5 |
+| d:\Mentora\mentora\src\pages\Live.jsx                           | JavaScript JSX |          0 |         -3 |         -2 |         -5 |
+| d:\Mentora\mentora\src\pages\Pricing.jsx                        | JavaScript JSX |          0 |         -4 |         -4 |         -8 |
+| d:\Mentora\mentora\src\pages\Signup.jsx                         | JavaScript JSX |          0 |         -3 |          0 |         -3 |
+| d:\Mentora\mentora\src\pages\live\Register.jsx                  | JavaScript JSX |          0 |         -1 |          0 |         -1 |
+| d:\Mentora\mentora\src\pages\live\Watch.jsx                     | JavaScript JSX |          0 |          0 |          1 |          1 |
+| d:\Mentora\mentora\src\pages\mentor\Dashboard.jsx               | JavaScript JSX |       -294 |         -7 |        -15 |       -316 |
+| d:\Mentora\mentora\src\pages\mentor\MentorAnalyticsPage.jsx     | JavaScript JSX |        315 |          7 |         14 |        336 |
+| d:\Mentora\mentora\src\pages\mentor\MentorCoursePage.jsx        | JavaScript JSX |        369 |          4 |         18 |        391 |
+| d:\Mentora\mentora\src\pages\mentor\MentorCoursesPage.jsx       | JavaScript JSX |        237 |          6 |         14 |        257 |
+| d:\Mentora\mentora\src\pages\mentor\MentorCreateCoursePage.jsx  | JavaScript JSX |        215 |          8 |         17 |        240 |
+| d:\Mentora\mentora\src\pages\mentor\MentorCreateSessionPage.jsx | JavaScript JSX |        267 |          9 |         18 |        294 |
+| d:\Mentora\mentora\src\pages\mentor\MentorDashboard.jsx         | JavaScript JSX |        289 |          5 |         14 |        308 |
+| d:\Mentora\mentora\src\pages\mentor\MentorEarningsPage.jsx      | JavaScript JSX |        207 |          5 |         12 |        224 |
+| d:\Mentora\mentora\src\pages\mentor\MentorEditCoursePage.jsx    | JavaScript JSX |        280 |         11 |         21 |        312 |
+| d:\Mentora\mentora\src\pages\mentor\MentorEditSessionPage.jsx   | JavaScript JSX |        349 |         13 |         23 |        385 |
+| d:\Mentora\mentora\src\pages\mentor\MentorMessagesPage.jsx      | JavaScript JSX |        218 |          4 |          9 |        231 |
+| d:\Mentora\mentora\src\pages\mentor\MentorSessionPage.jsx       | JavaScript JSX |        222 |          4 |         13 |        239 |
+| d:\Mentora\mentora\src\pages\mentor\MentorSessionsPage.jsx      | JavaScript JSX |        303 |          4 |         15 |        322 |
+| d:\Mentora\mentora\src\pages\mentor\MentorStudentPage.jsx       | JavaScript JSX |        294 |          4 |         14 |        312 |
+| d:\Mentora\mentora\src\pages\mentor\MentorStudentsPage.jsx      | JavaScript JSX |        116 |          1 |          7 |        124 |
+| d:\Mentora\mentora\src\pages\student\MyCourses.jsx              | JavaScript JSX |          0 |          0 |         -2 |         -2 |
+| d:\Mentora\mentora\src\pages\student\MyLives.jsx                | JavaScript JSX |          0 |         -2 |         -3 |         -5 |
+| d:\Mentora\mentora\src\pages\student\Profile.jsx                | JavaScript JSX |          0 |         -4 |         -3 |         -7 |
+| d:\Mentora\mentora\src\pages\student\Settings.jsx               | JavaScript JSX |          0 |         -2 |         -2 |         -4 |
+| Total                                                           |                |      3,463 |         50 |        175 |      3,688 |
++-----------------------------------------------------------------+----------------+------------+------------+------------+------------+

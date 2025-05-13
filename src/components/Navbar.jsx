@@ -10,9 +10,15 @@ const Navbar = () => {
   const [selectedCurrency, setSelectedCurrency] = useState('TND')
   const location = useLocation()
 
-  //TO DO CONTEXT 
+  // TO DO: Replace with actual context/API calls
   const [isLoggedIn, setIsLoggedIn] = useState(true)
-  
+  const [userRole, setUserRole] = useState('mentor') // 'student' or 'mentor'
+  const [userData, setUserData] = useState({
+    name: 'Chams Mhamdi',
+    email: 'chams.mh@gmail.com',
+    avatar: null
+  })
+
   const resourcesRef = useRef(null)
   const currencyRef = useRef(null)
   const userRef = useRef(null)
@@ -36,21 +42,38 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
   ]
 
+  // Add mentor-specific link if user is mentor
+  if (userRole === 'mentor') {
+    navLinks.splice(2, 0, { name: 'Mentor Dashboard', path: '/mentor/' })
+  }
+
   const currencies = [
     { code: 'TND', name: 'Tunisian Dinar', symbol: 'DT' },
     { code: 'USD', name: 'US Dollar', symbol: '$' },
     { code: 'EUR', name: 'Euro', symbol: '€' },
-    
   ]
 
-  const userMenuItems = [
+  const studentMenuItems = [
     { name: 'My Profile', path: '/profile', icon: User },
-    { name: 'My Classes', path: '/my-courses', icon: null },
+    { name: 'My Courses', path: '/my-courses', icon: null },
     { name: 'Live Sessions', path: '/my-live-sessions', icon: null },
     { name: 'Wishlist', path: '/wishlist', icon: null },
     { name: 'Settings', path: '/settings', icon: null },
     { name: 'Logout', path: '/login', icon: null },
   ]
+
+  const mentorMenuItems = [
+    { name: 'My Profile', path: '/profile', icon: User },
+    { name: 'Dashboard', path: '/mentor/', icon: null },
+    { name: 'My Courses', path: '/mentor/courses', icon: null },
+    { name: 'My Sessions', path: '/mentor/sessions', icon: null },
+    { name: 'Students', path: '/mentor/students', icon: null },
+    { name: 'Earnings', path: '/mentor/earnings', icon: null },
+    { name: 'Messages', path: '/mentor/messages', icon: null },
+    { name: 'Settings', path: '/settings', icon: null },
+    { name: 'Logout', path: '/login', icon: null },
+  ]
+
   const closeAllDropdowns = () => {
     setIsResourcesOpen(false)
     setIsCurrencyOpen(false)
@@ -61,10 +84,9 @@ const Navbar = () => {
   const handleLogout = () => {
     setIsLoggedIn(false)
     closeAllDropdowns()
-    // TO DO LOGOUT ML CONTEXT
+    // TO DO: Add actual logout logic
   }
 
-  // click lbara
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (resourcesRef.current && !resourcesRef.current.contains(event.target)) {
@@ -191,9 +213,17 @@ const Navbar = () => {
                   onClick={() => setIsUserOpen(!isUserOpen)}
                   className="flex items-center space-x-2 px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-teal-600 rounded-md hover:bg-gray-50"
                 >
-                  <div className="h-8 w-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
-                    <User size={16} />
-                  </div>
+                  {userData.avatar ? (
+                    <img 
+                      src={userData.avatar} 
+                      alt="User avatar" 
+                      className="h-8 w-8 rounded-full"
+                    />
+                  ) : (
+                    <div className="h-8 w-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                      <User size={16} />
+                    </div>
+                  )}
                   {isUserOpen ? (
                     <ChevronUp className="h-4 w-4" />
                   ) : (
@@ -203,10 +233,15 @@ const Navbar = () => {
                 {isUserOpen && (
                   <div className="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-20">
                     <div className="px-4 py-2 border-b border-gray-100">
-                      <p className="text-sm font-medium text-gray-900">Chams Mhamdi</p>
-                      <p className="text-xs text-gray-500">chams.mh@gmail.com</p>
+                      <p className="text-sm font-medium text-gray-900">{userData.name}</p>
+                      <p className="text-xs text-gray-500">{userData.email}</p>
+                      {userRole === 'mentor' && (
+                        <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-teal-100 text-teal-800 rounded-full">
+                          Mentor
+                        </span>
+                      )}
                     </div>
-                    {userMenuItems.map((item) => (
+                    {(userRole === 'mentor' ? mentorMenuItems : studentMenuItems).map((item) => (
                       <Link
                         key={item.name}
                         to={item.path}
@@ -347,15 +382,28 @@ const Navbar = () => {
               {isLoggedIn ? (
                 <>
                   <div className="px-3 py-2 mb-2 flex items-center space-x-3">
-                    <div className="h-10 w-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
-                      <User size={18} />
-                    </div>
+                    {userData.avatar ? (
+                      <img 
+                        src={userData.avatar} 
+                        alt="User avatar" 
+                        className="h-10 w-10 rounded-full"
+                      />
+                    ) : (
+                      <div className="h-10 w-10 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                        <User size={18} />
+                      </div>
+                    )}
                     <div>
-                      <p className="text-sm font-medium text-gray-900">John Doe</p>
-                      <p className="text-xs text-gray-500">john@example.com</p>
+                      <p className="text-sm font-medium text-gray-900">{userData.name}</p>
+                      <p className="text-xs text-gray-500">{userData.email}</p>
+                      {userRole === 'mentor' && (
+                        <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-teal-100 text-teal-800 rounded-full">
+                          Mentor
+                        </span>
+                      )}
                     </div>
                   </div>
-                  {userMenuItems.map((item) => (
+                  {(userRole === 'mentor' ? mentorMenuItems : studentMenuItems).map((item) => (
                     <Link
                       key={item.name}
                       to={item.path}
