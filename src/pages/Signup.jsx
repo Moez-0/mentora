@@ -22,7 +22,6 @@ const SignUp = () => {
       ...prev,
       [name]: value
     }))
-    // Clear error when user types
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -58,7 +57,7 @@ const SignUp = () => {
     
     setIsLoading(true)
     try {
-      // TODO: Replace with your actual signup API call
+      // TODO: Implement signup logic
       // await authService.signup(formData)
       console.log('Signup data:', formData)
       // Redirect or show success message
@@ -73,13 +72,11 @@ const SignUp = () => {
   const handleGoogleSignup = () => {
     // TODO: Implement Google OAuth
     console.log('Signup with Google')
-    // Example: window.location.href = 'https://your-api.com/auth/google'
   }
 
   const handleGithubSignup = () => {
     // TODO: Implement GitHub OAuth
     console.log('Signup with GitHub')
-    // Example: window.location.href = 'https://your-api.com/auth/github'
   }
 
   return (

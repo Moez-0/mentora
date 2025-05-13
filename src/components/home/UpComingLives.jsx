@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 const LiveSessionsSection = () => {
+    // TO DO CONSUME ML API
     const sessions = [
       {
         id: 1,

@@ -16,6 +16,8 @@ const SettingsPage = () => {
     currency: 'TND'
   })
 
+  // TO DO CONSUME ML CONTEXT
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target
     setFormData(prev => ({
@@ -26,7 +28,7 @@ const SettingsPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission
+    // TO DO
     alert('Settings saved successfully!')
   }
 
@@ -42,14 +44,11 @@ const SettingsPage = () => {
     <div className="bg-gray-50 min-h-screen pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white shadow rounded-lg overflow-hidden">
-          {/* Header */}
           <div className="bg-gradient-to-r from-teal-500 to-teal-700 px-6 py-8 sm:py-12 sm:px-10">
             <h1 className="text-3xl font-bold text-white">Settings</h1>
             <p className="mt-2 text-teal-100">Manage your account settings and preferences</p>
           </div>
-
           <div className="flex flex-col md:flex-row">
-            {/* Sidebar Navigation */}
             <div className="md:w-1/5 border-b md:border-b-0 md:border-r border-gray-200">
               <nav className="flex md:flex-col overflow-x-auto">
                 {tabs.map(tab => (
@@ -64,8 +63,6 @@ const SettingsPage = () => {
                 ))}
               </nav>
             </div>
-
-            {/* Main Content */}
             <div className="md:w-4/5 p-6 sm:p-10">
               {activeTab === 'account' && (
                 <div>
@@ -110,7 +107,6 @@ const SettingsPage = () => {
                   </form>
                 </div>
               )}
-
               {activeTab === 'security' && (
                 <div>
                   <h2 className="text-lg font-medium text-gray-900 mb-6">Security Settings</h2>

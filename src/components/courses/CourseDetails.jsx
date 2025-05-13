@@ -10,7 +10,7 @@ const CourseDetails = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        // Replace with actual API call
+        // TO DO CONSUME ML API 
         const mockCourse = {
           id: 1,
           title: 'Complete Web Development Bootcamp',
@@ -218,7 +218,6 @@ const CourseDetails = () => {
             </div>
           </div>
 
-          {/* Sidebar */}
           <div className="mt-12 lg:mt-0 lg:col-span-1">
             <div className="bg-gray-50 p-6 rounded-lg shadow-sm sticky top-6">
               <div className="aspect-w-16 aspect-h-9">

@@ -64,10 +64,8 @@ const FeaturesSection = () => {
   
     return (
       <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
-        {/* Background decoration */}
         <div className="absolute top-0 left-0 right-0 h-1/3 bg-white" aria-hidden="true" />
         <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gray-50" aria-hidden="true" />
-        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">

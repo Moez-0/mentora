@@ -4,7 +4,7 @@ import { FiCalendar, FiClock, FiVideo, FiCheckCircle, FiXCircle } from 'react-ic
 
 const MyLiveSessionsPage = () => {
   const [activeTab, setActiveTab] = useState('upcoming')
-
+  // TO DO CONSUME ML API
   const sessions = {
     upcoming: [
       {
@@ -54,13 +54,10 @@ const MyLiveSessionsPage = () => {
     <div className="bg-gray-50 min-h-screen pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white shadow rounded-lg overflow-hidden">
-          {/* Header */}
           <div className="bg-gradient-to-r from-teal-500 to-teal-700 px-6 py-8 sm:py-12 sm:px-10">
             <h1 className="text-3xl font-bold text-white">My Live Sessions</h1>
             <p className="mt-2 text-teal-100">View your registered and past live sessions</p>
           </div>
-
-          {/* Tabs */}
           <div className="border-b border-gray-200">
             <nav className="-mb-px flex">
               <button
@@ -77,8 +74,6 @@ const MyLiveSessionsPage = () => {
               </button>
             </nav>
           </div>
-
-          {/* Content */}
           <div className="px-6 py-8 sm:px-10">
             {sessions[activeTab].length === 0 ? (
               <div className="text-center py-12">

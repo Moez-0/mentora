@@ -6,7 +6,7 @@ const LiveSessionRegisterPage = () => {
   const { id } = useParams()
   const [registered, setRegistered] = useState(false)
   
-  // Mock session data
+  // TO DO CONSUME ML API
   const session = {
     id: id,
     title: 'Advanced JavaScript Patterns',
@@ -22,7 +22,6 @@ const LiveSessionRegisterPage = () => {
   }
 
   const handleRegister = () => {
-    // In a real app, this would call an API to register
     setRegistered(true)
   }
 

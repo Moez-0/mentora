@@ -4,7 +4,7 @@ import { FiCheck, FiCreditCard, FiLock, FiArrowLeft, FiAward } from 'react-icons
 
 const SubscriptionCheckoutPage = () => {
   const [searchParams] = useSearchParams()
-  const [plan, setPlan] = useState('individual') // Default to individual
+  const [plan, setPlan] = useState('individual') 
   const [billingCycle, setBillingCycle] = useState('monthly')
   const [paymentMethod, setPaymentMethod] = useState('card')
   const [agreeTerms, setAgreeTerms] = useState(false)

@@ -5,9 +5,9 @@ import { FiPlay, FiCheckCircle, FiBookOpen, FiDownload, FiAward } from 'react-ic
 const CourseLearnPage = () => {
   const { id } = useParams()
   const [activeTab, setActiveTab] = useState('content')
-  const [completedLessons, setCompletedLessons] = useState([1, 2, 3]) // Mock completed lessons
+  const [completedLessons, setCompletedLessons] = useState([1, 2, 3]) 
 
-  // Mock course data
+  // TO DO CONSUME ML API
   const course = {
     id: id,
     title: 'Advanced JavaScript Patterns',
@@ -138,7 +138,7 @@ const CourseLearnPage = () => {
               {/* Video Player */}
               <div className="bg-black aspect-w-16 aspect-h-9">
                 <iframe
-                //   src={`https://www.youtube.com/embed/${course.sections[0].lessons[0].videoId}`}
+
                   src='https://www.youtube.com/embed/tJCSxhm3Cc0'
                   className="w-full h-full"
                   allowFullScreen

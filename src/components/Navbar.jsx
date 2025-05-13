@@ -9,11 +9,10 @@ const Navbar = () => {
   const [isUserOpen, setIsUserOpen] = useState(false)
   const [selectedCurrency, setSelectedCurrency] = useState('TND')
   const location = useLocation()
-  
-  // Change this to true when user is logged in
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
 
-  // Refs for dropdown containers
+  //TO DO CONTEXT 
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  
   const resourcesRef = useRef(null)
   const currencyRef = useRef(null)
   const userRef = useRef(null)
@@ -52,8 +51,6 @@ const Navbar = () => {
     { name: 'Settings', path: '/settings', icon: null },
     { name: 'Logout', path: '/login', icon: null },
   ]
-
-  // Close all dropdowns
   const closeAllDropdowns = () => {
     setIsResourcesOpen(false)
     setIsCurrencyOpen(false)
@@ -64,10 +61,10 @@ const Navbar = () => {
   const handleLogout = () => {
     setIsLoggedIn(false)
     closeAllDropdowns()
-    // Add your logout logic here
+    // TO DO LOGOUT ML CONTEXT
   }
 
-  // Handle click outside dropdowns
+  // click lbara
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (resourcesRef.current && !resourcesRef.current.contains(event.target)) {
@@ -99,8 +96,6 @@ const Navbar = () => {
               <img className="h-9 w-auto" src="/logo.svg" alt="Mentora" />
             </Link>
           </div>
-
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <div key={link.name} className="relative group" ref={link.subLinks ? resourcesRef : null}>
@@ -156,7 +151,6 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            {/* Currency Selector */}
             <div className="relative" ref={currencyRef}>
               <button
                 onClick={() => setIsCurrencyOpen(!isCurrencyOpen)}
@@ -255,8 +249,6 @@ const Navbar = () => {
               </>
             )}
           </div>
-
-          {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -269,8 +261,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg" ref={mobileMenuRef}>
           <div className="px-3 pt-3 pb-5 space-y-1 sm:px-4">
@@ -319,8 +309,6 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-
-            {/* Mobile Currency Selector */}
             <div className="px-3 py-2">
               <button
                 onClick={() => setIsCurrencyOpen(!isCurrencyOpen)}

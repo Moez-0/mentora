@@ -4,7 +4,7 @@ import { FiBook, FiClock, FiAward, FiCheckCircle, FiPlay } from 'react-icons/fi'
 
 const MyCoursesPage = () => {
   const [activeTab, setActiveTab] = useState('in-progress')
-
+  // TO DO CONSUME ML API
   const courses = {
     'in-progress': [
       {
@@ -99,8 +99,6 @@ const MyCoursesPage = () => {
               </button>
             </nav>
           </div>
-
-          {/* Content */}
           <div className="px-6 py-8 sm:px-10">
             {courses[activeTab].length === 0 ? (
               <div className="text-center py-12">

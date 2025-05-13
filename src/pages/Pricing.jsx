@@ -78,8 +78,6 @@ const PricingPage = () => {
           <p className="mt-4 text-xl text-gray-600">
             Choose the plan that fits your learning goals and budget
           </p>
-          
-          {/* Billing Toggle */}
           <div className="mt-8 flex items-center justify-center">
             <span className={`mr-4 text-sm font-medium ${!annualBilling ? 'text-gray-900' : 'text-gray-500'}`}>
               Monthly
@@ -104,8 +102,6 @@ const PricingPage = () => {
             </span>
           </div>
         </div>
-
-        {/* Pricing Cards */}
         <div className="mt-16 space-y-8 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           {plans.map((plan) => (
             <div
@@ -166,8 +162,6 @@ const PricingPage = () => {
             </div>
           ))}
         </div>
-
-        {/* Enterprise Section */}
         <div className="mt-16 bg-white shadow rounded-lg overflow-hidden">
           <div className="px-6 py-8 sm:p-10 sm:pb-6">
             <div className="flex items-start">
@@ -235,8 +229,6 @@ const PricingPage = () => {
             </Link>
           </div>
         </div>
-
-        {/* FAQ Section */}
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-gray-900">Frequently asked questions</h2>
           <div className="mt-6 border-t border-gray-200 pt-10">

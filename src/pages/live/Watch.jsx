@@ -8,7 +8,7 @@ const LiveSessionPage = () => {
   const [chatMessages, setChatMessages] = useState([])
   const [newMessage, setNewMessage] = useState('')
   
-  // Mock session data
+  // TO DO CONSUME ML API
   const session = {
     id: id,
     title: 'Advanced JavaScript Patterns',

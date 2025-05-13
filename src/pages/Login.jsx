@@ -49,7 +49,7 @@ const Login = () => {
     
     setIsLoading(true)
     try {
-      // TODO: Replace with your actual login API call
+      // TODO: Implement login logic
       // await authService.login(formData)
       console.log('Login data:', formData)
       // Redirect or show success message

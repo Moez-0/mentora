@@ -7,7 +7,7 @@ const CourseCheckoutPage = () => {
   const [paymentMethod, setPaymentMethod] = useState('card')
   const [agreeTerms, setAgreeTerms] = useState(false)
   
-  // Mock course data - in a real app, this would come from an API
+  // TO DO CONSUME ML API
   const course = {
     id: id,
     title: 'Complete Web Development Bootcamp',

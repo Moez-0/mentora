@@ -16,7 +16,7 @@ const TrustedByCarousel = () => {
 
   const [pause, setPause] = useState(false)
   const carouselRef = useRef(null)
-  const speed = 50 // pixels per second
+  const speed = 50 
 
   useEffect(() => {
     const carousel = carouselRef.current
@@ -49,7 +49,6 @@ const TrustedByCarousel = () => {
     }
   }, [pause])
 
-  // Double the logos for infinite loop effect
   const doubledLogos = [...logos, ...logos]
 
   return (

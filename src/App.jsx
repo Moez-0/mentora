@@ -27,6 +27,7 @@ import SubscriptionCheckoutPage from "./pages/plan/Subscribe"
 import LiveSessionRegisterPage from "./pages/live/Register"
 import LiveSessionPage from "./pages/live/Watch"
 
+
 function App() {
   
 
@@ -53,15 +54,13 @@ function App() {
           <Route path="live/:id/register" element={<LiveSessionRegisterPage />} />
           <Route path="live/:id/watch" element={<LiveSessionPage />} />
 
-          
-
-          
           <Route path="profile" element={<ProfilePage />} />
           <Route path="my-courses" element={<MyCoursesPage />} />
           <Route path="my-live-sessions" element={<MyLiveSessionsPage />} />
           <Route path="settings" element={<SettingsPage />} />
 
 
+          {/* TO DO ZYD MENTOR ( INTRUCTOR ROUTES ) */}
 
 
           <Route path="login" element={<Login />} />

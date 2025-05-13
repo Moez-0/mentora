@@ -7,6 +7,7 @@ const LiveSessions = () => {
   const [filter, setFilter] = useState('all')
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
+  // TO DO CONSUME ML API
   const sessions = {
     upcoming: [
       {
@@ -110,7 +111,6 @@ const LiveSessions = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen pt-20">
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-teal-500 to-teal-800 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
@@ -121,10 +121,7 @@ const LiveSessions = () => {
           </p>
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Mobile filter dialog */}
         <div className={`fixed inset-0 z-40 lg:hidden ${mobileFiltersOpen ? 'block' : 'hidden'}`}>
           <div className="fixed inset-0 bg-black bg-opacity-25" onClick={() => setMobileFiltersOpen(false)}></div>
           <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-xl overflow-y-auto">
@@ -158,8 +155,6 @@ const LiveSessions = () => {
             </div>
           </div>
         </div>
-
-        {/* Filter/Sort Bar */}
         <div className="mb-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             {/* Tabs */}

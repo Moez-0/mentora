@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 const LiveSessionDetails = () => {
   const { id } = useParams()
   
-  // In a real app, you would fetch this data based on the id
+  // TO DO CONSUME ML API
   const session = {
     id: 1,
     title: 'Advanced JavaScript Patterns',

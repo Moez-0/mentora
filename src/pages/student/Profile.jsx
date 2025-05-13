@@ -14,6 +14,7 @@ const ProfilePage = () => {
     education: 'Software Engineering Degree - Polytechnique Monastir',
     avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80'
   })
+  // TO DO CONSUME ML CONTEXT
 
   const [formData, setFormData] = useState({ ...profile })
 
@@ -38,7 +39,6 @@ const ProfilePage = () => {
     <div className="bg-gray-50 min-h-screen pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white shadow rounded-lg overflow-hidden">
-          {/* Profile Header */}
           <div className="bg-gradient-to-r from-teal-500 to-teal-700 px-6 py-8 sm:py-12 sm:px-10 relative">
             <div className="flex items-center justify-between">
               <h1 className="text-3xl font-bold text-white">My Profile</h1>
@@ -51,11 +51,8 @@ const ProfilePage = () => {
               </button>
             </div>
           </div>
-
-          {/* Profile Content */}
           <div className="px-6 py-8 sm:px-10">
             <div className="flex flex-col md:flex-row gap-8">
-              {/* Left Column - Avatar and Stats */}
               <div className="md:w-1/3">
                 <div className="flex flex-col items-center">
                   <div className="relative">
@@ -74,8 +71,6 @@ const ProfilePage = () => {
                   <p className="text-gray-600">{profile.location}</p>
                   <p className="text-sm text-gray-500 mt-1">{profile.joinDate}</p>
                 </div>
-
-                {/* Stats */}
                 <div className="mt-8 space-y-4">
                   {stats.map((stat, index) => (
                     <div key={index} className="flex items-center p-3 bg-gray-50 rounded-lg">
@@ -88,8 +83,6 @@ const ProfilePage = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Right Column - Profile Info */}
               <div className="md:w-2/3">
                 {editMode ? (
                   <form onSubmit={handleSubmit}>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const CoursesSection = () => {
+  //TO DO CONSUME ML API 
   const courses = [
     {
       id: 1,

@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 
 const TestimonialsSection = () => {
+    //TO DO CONSUME ML API
     const testimonials = [
       {
         id: 1,

@@ -1,0 +1,24 @@
+"filename", "language", "Markdown", "JavaScript JSX", "CSS", "comment", "blank", "total"
+"d:\Mentora\mentora\README.md", "Markdown", 1, 0, 0, 0, 0, 1
+"d:\Mentora\mentora\src\App.jsx", "JavaScript JSX", 0, 14, 0, 0, 9, 23
+"d:\Mentora\mentora\src\components\Navbar.jsx", "JavaScript JSX", 0, 128, 0, 5, 6, 139
+"d:\Mentora\mentora\src\components\courses\CourseDetails.jsx", "JavaScript JSX", 0, 2, 0, -4, 4, 2
+"d:\Mentora\mentora\src\components\home\Feature.jsx", "JavaScript JSX", 0, 0, 0, 0, 1, 1
+"d:\Mentora\mentora\src\components\home\HeroSection.jsx", "JavaScript JSX", 0, 0, 0, -2, 0, -2
+"d:\Mentora\mentora\src\components\home\Trusted.jsx", "JavaScript JSX", 0, -3, 0, 0, 2, -1
+"d:\Mentora\mentora\src\components\live\LiveDetails.jsx", "JavaScript JSX", 0, -3, 0, 0, 1, -2
+"d:\Mentora\mentora\src\index.css", "CSS", 0, 0, 4, 0, 2, 6
+"d:\Mentora\mentora\src\pages\Live.jsx", "JavaScript JSX", 0, 2, 0, 0, 0, 2
+"d:\Mentora\mentora\src\pages\NotFound.jsx", "JavaScript JSX", 0, 20, 0, 0, 1, 21
+"d:\Mentora\mentora\src\pages\Pricing.jsx", "JavaScript JSX", 0, -9, 0, 0, 2, -7
+"d:\Mentora\mentora\src\pages\course\Checkout.jsx", "JavaScript JSX", 0, 200, 0, 11, 15, 226
+"d:\Mentora\mentora\src\pages\course\Learn.jsx", "JavaScript JSX", 0, 262, 0, 9, 16, 287
+"d:\Mentora\mentora\src\pages\live\Register.jsx", "JavaScript JSX", 0, 129, 0, 4, 11, 144
+"d:\Mentora\mentora\src\pages\live\Watch.jsx", "JavaScript JSX", 0, 191, 0, 6, 9, 206
+"d:\Mentora\mentora\src\pages\plan\Subscribe.jsx", "JavaScript JSX", 0, 308, 0, 16, 19, 343
+"d:\Mentora\mentora\src\pages\student\Dashboard.jsx", "JavaScript JSX", 0, -475, 0, -19, -30, -524
+"d:\Mentora\mentora\src\pages\student\MyCourses.jsx", "JavaScript JSX", 0, 204, 0, 3, 10, 217
+"d:\Mentora\mentora\src\pages\student\MyLives.jsx", "JavaScript JSX", 0, 172, 0, 3, 10, 185
+"d:\Mentora\mentora\src\pages\student\Profile.jsx", "JavaScript JSX", 0, 210, 0, 5, 10, 225
+"d:\Mentora\mentora\src\pages\student\Settings.jsx", "JavaScript JSX", 0, 307, 0, 4, 12, 323
+"Total", "-", 1, 1659, 4, 41, 110, 1815
