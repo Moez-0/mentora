@@ -12,7 +12,7 @@ const Navbar = () => {
 
   // TO DO: Replace with actual context/API calls
   const [isLoggedIn, setIsLoggedIn] = useState(true)
-  const [userRole, setUserRole] = useState('mentor') // 'student' or 'mentor'
+  const [userRole, setUserRole] = useState('student') // 'student' or 'mentor'
   const [userData, setUserData] = useState({
     name: 'Chams Mhamdi',
     email: 'chams.mh@gmail.com',
